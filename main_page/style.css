@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background-color: #F8F9FA;
+    color: #F8FAFC;
+    min-height: 100vh;
+}
+.navBar{
+    width:100%;
+    height: 70px;
+    background-color: rgb(180, 67, 67);
+    display: flex;
+    align-items: center;
+
+}
+.barsContainer{
+    margin-right:7px;
+    margin-left: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition:all 0.13s ease;
+    cursor: pointer;
+}
+.barsContainer:hover{
+   background-color: rgb(165, 57, 57);
+}
+.fa-bars{
+
+    font-size: 20px;
+
+    border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.createQuiz{
+    margin-top: 7px;
+    cursor: pointer;
+    border:none;
+    margin-left: 30px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+.createQuiz:hover{
+    background-color: #0F172A;
+    color: white;
+}
+.createQuiz:active{
+    transform: scale(0.96);
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.quizLogo{
+    font-size: 40px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+}
+.startQuiz{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startQuiz button{
+    cursor: pointer;
+    border:none;
+    font-size: 50px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.13s;
+    transform: scale(0.97);
+    background-color: rgb(180, 67, 67);
+    color: white;
+    transition: all 0.13s;
+}
+.startQuiz button:hover{
+    transform: scale(1.01);
+}
+.startQuiz button:active{
+    transform: scale(0.98);
+}
