@@ -3,9 +3,14 @@
     padding: 0;
     overflow: hidden;
 }
+:root{
+    --blue:#0F172A;
+    --red: rgb(180, 67, 67);
+    --white:#F8F9FA;
+}
 body {
-    background-color: #F8F9FA;
-    color: #F8FAFC;
+    background-color: var(--blue);
+    color: var(--white);
     min-height: 100vh;
 }
 .navBar{
@@ -42,7 +47,7 @@ body {
     cursor: pointer;
 }
 
-.createQuiz{
+.clasament{
     margin-top: 7px;
     cursor: pointer;
     border:none;
@@ -50,12 +55,10 @@ body {
     padding: 8px 20px;
     border-radius: 10px;
     transition: all 0.25s ease;
+    color: var(--blue);
 }
-.createQuiz:hover{
-    background-color: #0F172A;
-    color: white;
-}
-.createQuiz:active{
+
+.clasament:active{
     transform: scale(0.96);
 }
 .left{
@@ -91,4 +94,33 @@ body {
 }
 .startQuiz button:active{
     transform: scale(0.98);
+}
+.categoriiWrapper{
+    background-color: purple;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.categorii{
+    width:60%;
+    min-width: 600px;
+    background-color: darkred;
+}
+.titluCategorii{
+    padding-left: 30px;
+    font-size: 60px;
+    padding-top: 10px;
+}
+.gridContainerCategorii{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+}
+.itemCategorii{
+    text-align: center;
+    border-radius:12px;
+    background-color: blue;
+    padding: 2em;
+    font-size: 2rem;
 }
