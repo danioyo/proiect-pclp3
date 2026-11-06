@@ -114,13 +114,34 @@ body {
 }
 .gridContainerCategorii{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+    padding-top: 10px;
+    
 }
 .itemCategorii{
-    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    min-height: 140px;
     border-radius:12px;
     background-color: blue;
-    padding: 2em;
-    font-size: 2rem;
+    padding: 10px 20px;
+    font-size: 1.75rem;
+    transition: all 0.13s;
+
+}
+.lastRow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+
+}
+.categorieCentrata{
+    width: calc((100% - 32px) / 3);
+}
+.itemCategorii:hover{
+    transform: translateY(-3px);
 }
