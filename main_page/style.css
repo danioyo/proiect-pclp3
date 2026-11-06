@@ -19,7 +19,7 @@ body {
     background-color: rgb(180, 67, 67);
     display: flex;
     align-items: center;
-
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
 }
 .barsContainer{
     margin-right:7px;
@@ -96,7 +96,6 @@ body {
     transform: scale(0.98);
 }
 .categoriiWrapper{
-    background-color: purple;
     height:100vh;
     display: flex;
     justify-content: center;
@@ -105,7 +104,9 @@ body {
 .categorii{
     width:60%;
     min-width: 600px;
-    background-color: darkred;
+    background-color: #1f2f53;
+    padding: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
 }
 .titluCategorii{
     padding-left: 30px;
@@ -126,11 +127,10 @@ body {
     align-items:flex-start;
     min-height: 140px;
     border-radius:12px;
-    background-color: blue;
     padding: 10px 20px;
     font-size: 1.75rem;
     transition: all 0.13s;
-
+    background: linear-gradient(135deg, var(--red) 0%, rgb(97, 28, 28) 100%);
 }
 .lastRow{
     display: flex;
@@ -144,4 +144,7 @@ body {
 }
 .itemCategorii:hover{
     transform: translateY(-3px);
+}
+.itemCategorii:active{
+    transform: scale(0.99);
 }
