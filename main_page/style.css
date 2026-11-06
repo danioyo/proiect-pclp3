@@ -43,6 +43,7 @@ body {
     transform: scale(0.97);
 }
 .register{
+    font-weight: 700;
     font-family: "Inter", sans-serif;
     color: #1f2f53;
     padding: 7.5px 10px;
