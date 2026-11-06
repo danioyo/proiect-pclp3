@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
 }
 :root{
     --blue:#0F172A;
@@ -12,14 +12,53 @@ body {
     background-color: var(--blue);
     color: var(--white);
     min-height: 100vh;
+    overflow: hidden;
 }
 .navBar{
     width:100%;
     height: 70px;
     background-color: rgb(180, 67, 67);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.right{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.login{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    transition: text-decoration 1s ease;
+}
+.login:hover{
+    text-decoration: underline;
+    text-decoration-color: #1f2f53;
+}
+.login:active{
+    transform: scale(0.97);
+}
+.register{
+    font-family: "Inter", sans-serif;
+    color: #1f2f53;
+    padding: 7.5px 10px;
+    font-size: 14px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--white);
+    transition: all 0.32s ease;
+}
+.register:hover{
+    color:var(--white);
+    background-color: #1f2f53;
+}
+.register:active{
+    background-color:#0F172A;
 }
 .barsContainer{
     margin-right:7px;
@@ -106,9 +145,11 @@ body {
     min-width: 600px;
     background-color: #1f2f53;
     padding: 24px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.45);
 }
 .titluCategorii{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     padding-left: 30px;
     font-size: 60px;
     padding-top: 10px;
@@ -118,9 +159,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap:16px;
     padding-top: 10px;
-    
+    padding-bottom: 13px;
 }
 .itemCategorii{
+    user-select: none;
+    font-family: "Inter", sans-serif;
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
@@ -130,13 +173,15 @@ body {
     padding: 10px 20px;
     font-size: 1.75rem;
     transition: all 0.13s;
-    background: linear-gradient(135deg, var(--red) 0%, rgb(97, 28, 28) 100%);
+    box-shadow: 5px 6.5px 10px rgba(0, 0, 0, 0.45);
+    background: linear-gradient(135deg, var(--red) 0%, rgb(126, 39, 39) 100%);
 }
 .lastRow{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 16px;
 
 }
 .categorieCentrata{
