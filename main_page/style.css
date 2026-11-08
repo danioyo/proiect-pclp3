@@ -142,6 +142,7 @@ body {
 
 }
 .categorii{
+    height: 100%;
     width:60%;
     min-width: 600px;
     background-color: #1f2f53;
