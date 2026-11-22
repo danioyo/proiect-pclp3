@@ -1,5 +1,7 @@
 import requests
 
+
+#ZONA DANI
 base_url = "https://the-trivia-api.com/v2/questions/"
 
 def get_question(category,difficulty):
