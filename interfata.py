@@ -35,12 +35,10 @@ def porneste_aplicatia():
     pagina_intrebari = tk.Frame(root)
     tk.Label(pagina_intrebari, text="Intrebari:", font=("Arial", 20)).pack(pady=20)
 
-
     def alegere_categ(categ):
         pagina_categorii.pack_forget()
         pagina_intrebari.pack()
 
-    tk.Button(grid_butoane, )
 
     def categorii(event):
         nume = entry_nume.get()
@@ -48,8 +46,6 @@ def porneste_aplicatia():
         pagina_categorii.pack()
 
     entry_nume.bind("<Return>", categorii)
-
-    root.mainloop() 
 
 
 
@@ -67,3 +63,16 @@ def porneste_aplicatia():
 
 
     #Zona lui Andrei
+
+
+
+
+
+
+
+
+
+
+
+
+    root.mainloop() 
