@@ -31,8 +31,16 @@ def porneste_aplicatia():
     tk.Button(grid_butoane, text="Geography", width=15, height=3).grid(row=1, column=1, padx=10, pady=10)
 
 
-    def science():
-        tk.Button(grid_butoane,text = "Science", width=15, height=3, command="alege_science")
+    #pag 3(intrebari)
+    pagina_intrebari = tk.Frame(root)
+    tk.Label(pagina_intrebari, text="Intrebari:", font=("Arial", 20)).pack(pady=20)
+
+
+    def alegere_categ(categ):
+        pagina_categorii.pack_forget()
+        pagina_intrebari.pack()
+
+    tk.Button(grid_butoane, )
 
     def categorii(event):
         nume = entry_nume.get()
@@ -52,3 +60,10 @@ def porneste_aplicatia():
 
 
     #Zona lui Cosmmin
+
+
+
+
+
+
+    #Zona lui Andrei
