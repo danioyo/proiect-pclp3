@@ -1,8 +1,7 @@
-from logica import creeaza_intrebare
+from interfata import porneste_aplicatia
 
 def main():
-    intrebare1 = creeaza_intrebare(
-        "ce culoare are spongebob?",
-        ["rosu","galben", "albastru", "mov"],
-        1)
+    pass
+if __name__ == "__main__":
+    porneste_aplicatia()
     
