@@ -10,3 +10,7 @@ def get_question(category,difficulty):
     return response.json()
 
 get_question("science","easy")
+
+
+
+    #Zona lui Cosmmin

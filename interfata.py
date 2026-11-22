@@ -27,7 +27,8 @@ def porneste_aplicatia():
     tk.Button(grid_butoane, text="Geography", width=15, height=3).grid(row=1, column=1, padx=10, pady=10)
 
 
-
+    def science():
+        tk.Button(grid_butoane,text = "Science", width=15, height=3, command="alege_science")
 
     def categorii(event):
         nume = entry_nume.get()
@@ -37,3 +38,5 @@ def porneste_aplicatia():
     entry_nume.bind("<Return>", categorii)
 
     root.mainloop() 
+
+    #Zona lui Cosmmin
