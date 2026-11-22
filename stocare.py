@@ -9,7 +9,6 @@ def get_question(category,difficulty):
     response = requests.get(url)
     return response.json()
 
-get_question("science","easy")
 
 
 
