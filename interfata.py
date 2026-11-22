@@ -10,6 +10,24 @@ def porneste_aplicatia():
     root.title("Quiz App")
     root.geometry("800x500")
 
+    selectie = {"categorie":"", "dificultate": ""}
+
+    #functii
+    def go_to_pickName():
+            pagina_pornire.pack_forget()
+            pagina_nume.pack()
+
+    def alege_categorie(categ):
+            selectie["categorie"] = categ
+            pagina_categorii.pack_forget()
+            pagina_dificultate.pack()
+
+    def categorii(event):
+            nume = entry_nume.get()
+            pagina_nume.pack_forget()
+            pagina_categorii.pack()
+    def alege_dificultate():
+        pass
 
     #pagina 0(pagina de pornire)
     pagina_pornire = tk.Frame(root)
@@ -17,11 +35,6 @@ def porneste_aplicatia():
     tk.Label(pagina_pornire, text="QUIZ", font=("Arial", 20)).pack(pady=20)
     grid_butoane_pornire = tk.Frame(pagina_pornire)
     grid_butoane_pornire.pack(pady=10)
-
-
-    def go_to_pickName():
-            pagina_pornire.pack_forget()
-            pagina_nume.pack()
 
     
     tk.Button(grid_butoane_pornire, text="Start Quiz", width=15, height=2, command=go_to_pickName).grid(row=0, column=0, padx=10)
@@ -47,10 +60,6 @@ def porneste_aplicatia():
     grid_butoane = tk.Frame(pagina_categorii)
     grid_butoane.pack(pady=10)
 
-    def alege_categorie(categ):
-        selectie["categorie"] = categ
-        pagina_categorii.pack_forget()
-        pagina_dificultate.pack()
 
     tk.Button(grid_butoane, text="Science", width=15, height=3, command=lambda: alege_categorie("science")).grid(row=0, column=0, padx=10, pady=10)
     tk.Button(grid_butoane, text="History", width=15, height=3, command=lambda: alege_categorie("history")).grid(row=0, column=1, padx=10, pady=10)
@@ -75,13 +84,7 @@ def porneste_aplicatia():
 
 
 
-    selectie = {"categorie":"", "dificultate": ""}
     
-
-    def categorii(event):
-        nume = entry_nume.get()
-        pagina_nume.pack_forget()
-        pagina_categorii.pack()
 
     entry_nume.bind("<Return>", categorii)
 
