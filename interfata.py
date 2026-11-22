@@ -1,6 +1,10 @@
 import tkinter as tk
 
 def porneste_aplicatia():
+
+
+
+    #ZONA DANI
     root = tk.Tk()
     root.title("Quiz App")
     root.geometry("800x500")
@@ -38,5 +42,13 @@ def porneste_aplicatia():
     entry_nume.bind("<Return>", categorii)
 
     root.mainloop() 
+
+
+
+
+
+
+
+
 
     #Zona lui Cosmmin
